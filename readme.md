@@ -5,6 +5,8 @@ The API connects with Zomato API.
 
 ## UPDATE 08/Nov
 The dependency `uuid` was missing from package.json. The package.json was updated to fix this.
+Docker support is on a different branch (`feature/docker`) because it was added after the time was up.
+ 
 
 ## Features
 - Login

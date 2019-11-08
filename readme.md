@@ -3,6 +3,9 @@ Rest API that finds restaurants by city or coordinates.
 
 The API connects with Zomato API.
 
+## UPDATE 08/Nov
+The dependency `uuid` was missing from package.json. The package.json was updated to fix this.
+
 ## Features
 - Login
 - Sign up

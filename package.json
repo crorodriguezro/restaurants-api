@@ -28,7 +28,8 @@
     "reflect-metadata": "^0.1.13",
     "sqlite3": "^4.1.0",
     "ts-node-dev": "^1.0.0-pre.44",
-    "typeorm": "0.2.20"
+    "typeorm": "0.2.20",
+    "uuid": "^3.3.3"
   },
   "scripts": {
     "start": "ts-node-dev --respawn --transpileOnly ./src/index.ts"

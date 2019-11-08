@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "0720e0ce-8d6e-43b3-aae0-4a029c468e62",
+		"name": "Tyba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Find restaurants",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authentication",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNyaXN0aWFuIiwiaWF0IjoxNTczMTkxNDUxLCJleHAiOjE1NzMxOTUwNTF9.3OPdde7GJFfqOus3kEtOmx8smCY9Ygmorsb9bbaHcBk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/restaurants?latitude=32.7438020000&longitude=-117.1605620000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"restaurants"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "32.7438020000"
+						},
+						{
+							"key": "longitude",
+							"value": "-117.1605620000"
+						},
+						{
+							"key": "city",
+							"value": "san diego",
+							"disabled": true
+						}
+					]
+				},
+				"description": "query params\n- city\n- latitude\n- longitude"
+			},
+			"response": []
+		},
+		{
+			"name": "Get transactions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authentication",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNyaXN0aWFuIiwiaWF0IjoxNTczMTkxOTU5LCJleHAiOjE1NzMxOTU1NTl9.tlBROzAyo__PeHl_uNLaQxkgrcC-9Y7ifbalBCVOi04",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Authentication",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNyaXN0aWFuIiwiaWF0IjoxNTczMTkxNDUxLCJleHAiOjE1NzMxOTUwNTF9.3OPdde7GJFfqOus3kEtOmx8smCY9Ygmorsb9bbaHcBk",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/transactions",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"cristian\",\n\t\"password\": \"pass\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/auth/sign-up",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"sign-up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"cristian\",\n\t\"password\": \"pass\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/auth/sign-up",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"sign-up"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

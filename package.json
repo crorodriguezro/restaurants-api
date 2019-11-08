@@ -1,0 +1,36 @@
+{
+  "name": "restaurants",
+  "version": "0.9.0",
+  "description": "Tyba",
+  "devDependencies": {
+    "ts-node": "3.3.0",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/body-parser": "^1.17.1",
+    "@types/cors": "^2.8.6",
+    "@types/helmet": "0.0.45",
+    "@types/jsonwebtoken": "^8.3.5",
+    "@types/node": "^8.10.58",
+    "typescript": "3.7.2"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/express-validator": "^3.0.0",
+    "@types/node-uuid": "0.0.28",
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "helmet": "^3.21.2",
+    "jsonwebtoken": "^8.5.1",
+    "node-uuid": "^1.4.8",
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^4.1.0",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typeorm": "0.2.20"
+  },
+  "scripts": {
+    "start": "ts-node-dev --respawn --transpileOnly ./src/index.ts"
+  }
+}
